@@ -1,0 +1,397 @@
+.ver-servicos-page {
+    background: #111;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.vs-hero {
+    padding: 140px 32px 60px;
+    text-align: center;
+    background: linear-gradient(135deg, #111 0%, #1a0a0a 50%, #111 100%);
+    border-bottom: 1px solid #222;
+}
+
+.vs-hero h1 {
+    color: #FFD600;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.vs-hero p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+/* STATS */
+.vs-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    background: linear-gradient(135deg, #FFD600 0%, #111 50%, #CC1010 95%);
+    padding: 32px;
+}
+
+.vs-stat {
+    text-align: center;
+    padding: 16px;
+}
+
+.vs-stat span {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.vs-stat p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-top: 4px;
+}
+
+/* CONTEÚDO */
+.vs-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 32px;
+}
+
+.vs-busca {
+    width: 100%;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 32px;
+    transition: border-color 0.2s;
+}
+
+.vs-busca:focus {
+    border-color: #FFD600;
+}
+
+/* GRID */
+.vs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.vs-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vs-card:hover {
+    transform: translateY(-4px);
+    border-color: #FFD600;
+}
+
+.vs-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vs-data {
+    color: #888;
+    font-size: 12px;
+}
+
+.vs-status {
+    color: #00ff88;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.vs-card h3 {
+    color: #FFD600;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.vs-moto {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.vs-cliente {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.vs-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+    padding-top: 8px;
+    border-top: 1px solid #2a2a2a;
+}
+
+.vs-funcionario {
+    color: #888;
+    font-size: 12px;
+}
+
+.vs-valor {
+    color: #FFD600;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btn-detalhes {
+    background: none;
+    border: 1px solid #333;
+    color: #888;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.btn-detalhes:hover {
+    border-color: #FFD600;
+    color: #FFD600;
+}
+
+.vs-vazio {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 60px;
+    color: #555;
+}
+
+.vs-vazio span {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* MODAL */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.vs-modal {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 28px;
+    width: 100%;
+    max-width: 480px;
+}
+
+.vs-modal-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.vs-modal-top h2 {
+    color: #FFD600;
+    font-size: 20px;
+}
+
+.btn-fechar {
+    background: #222;
+    border: none;
+    color: #aaa;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.vs-modal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.vs-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: #111;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.vs-info-label {
+    color: #888;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.vs-info-item span:last-child {
+    color: #fff;
+    font-size: 14px;
+}
+
+.vs-valor-modal {
+    color: #FFD600 !important;
+    font-weight: 700 !important;
+}
+
+.vs-status-modal {
+    color: #00ff88 !important;
+    font-weight: 700 !important;
+}
+
+.vs-descricao {
+    background: #111;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.vs-descricao p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.btn-agendar-modal {
+    display: block;
+    text-align: center;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+
+.btn-agendar-modal:hover {
+    background: #1ebe5d;
+}
+
+/* CTA */
+.vs-cta {
+    background: #0d0d0d;
+    border-top: 1px solid #222;
+    padding: 60px 32px;
+    text-align: center;
+}
+
+.vs-cta h2 {
+    color: #FFD600;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.vs-cta p {
+    color: #aaa;
+    margin-bottom: 24px;
+}
+
+.vs-cta-btns {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.btn-vermelho {
+    background: #CC1010;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.btn-verde {
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+/* FOOTER */
+.footer {
+    background: #0a0a0a;
+    border-top: 2px solid #CC1010;
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-dev {
+    color: #FFD600 !important;
+}
+
+.link-admin {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.link-admin:hover {
+    color: #FFD600;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .vs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vs-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vs-hero h1 {
+        font-size: 28px;
+    }
+
+    .vs-cta-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vs-modal-info {
+        grid-template-columns: 1fr;
+    }
+}

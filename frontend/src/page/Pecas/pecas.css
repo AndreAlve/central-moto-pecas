@@ -1,0 +1,203 @@
+.pecas-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.peca-stat {
+    background: #161616;
+    border: 1px solid #2b2b2b;
+    border-radius: 12px;
+    padding: 16px 20px;
+    text-align: center;
+}
+
+.peca-stat span {
+    font-size: 28px;
+    font-weight: 800;
+    color: #FFD600;
+    display: block;
+}
+
+.peca-stat span.alerta {
+    color: #CC1010;
+}
+
+.peca-stat p {
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-top: 4px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.input-busca {
+    flex: 1;
+    background: #161616;
+    border: 1px solid #2b2b2b;
+    border-radius: 10px;
+    padding: 10px 16px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-busca:focus {
+    border-color: #FFD600;
+}
+
+.peca-foto-cell {
+    font-size: 28px;
+    text-align: center;
+}
+
+.peca-desc {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.badge-categoria {
+    background: rgba(255, 214, 0, .1);
+    color: #FFD600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.peca-preco {
+    color: #FFD600;
+    font-weight: 700;
+}
+
+.estoque-baixo {
+    color: #CC1010;
+    font-weight: 700;
+}
+
+.estoque-ok {
+    color: #00ff88;
+    font-weight: 600;
+}
+
+.modal-grande {
+    max-width: 620px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.emoji-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.emoji-btn {
+    font-size: 24px;
+    background: #111;
+    border: 2px solid #2b2b2b;
+    border-radius: 8px;
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: all .15s;
+}
+
+.emoji-btn:hover {
+    border-color: #FFD600;
+}
+
+.emoji-btn.selecionado {
+    border-color: #FFD600;
+    background: rgba(255, 214, 0, .1);
+}
+
+textarea {
+    width: 100%;
+    background: #111;
+    border: 1px solid #2b2b2b;
+    border-radius: 10px;
+    padding: 12px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    resize: vertical;
+    font-family: inherit;
+}
+
+textarea:focus {
+    border-color: #FFD600;
+}
+
+
+.upload-area {
+    border: 2px dashed #2b2b2b;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+
+.upload-area:hover {
+    border-color: #FFD600;
+}
+
+.upload-label {
+    color: #888;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+}
+
+.upload-label:hover {
+    color: #FFD600;
+}
+
+.preview-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.preview-foto img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #FFD600;
+}
+
+.btn-remover-foto {
+    background: rgba(204, 16, 16, 0.15);
+    color: #CC1010;
+    border: 1px solid rgba(204, 16, 16, 0.3);
+    border-radius: 6px;
+    padding: 4px 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.peca-foto-thumb {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #333;
+}

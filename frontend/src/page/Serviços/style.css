@@ -1,0 +1,271 @@
+.servicos-page {
+    background: #111;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* HERO */
+.servicos-hero {
+    padding: 140px 32px 80px;
+    text-align: center;
+    background: linear-gradient(135deg, #111 0%, #1a0a0a 50%, #111 100%);
+    border-bottom: 1px solid #222;
+}
+
+.servicos-hero h1 {
+    color: #FFD600;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.servicos-hero p {
+    color: #aaa;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.btn-agendar-hero {
+    background: #CC1010;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background 0.2s;
+}
+
+.btn-agendar-hero:hover {
+    background: #aa0d0d;
+}
+
+/* LISTA DE SERVIÇOS */
+.servicos-lista {
+    padding: 60px 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.servico-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 16px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.servico-card:hover {
+    transform: translateY(-6px);
+    border-color: #CC1010;
+}
+
+.servico-emoji {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.servico-card h3 {
+    color: #FFD600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.servico-card p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.servico-preco {
+    background: rgba(204, 16, 16, 0.15);
+    color: #CC1010;
+    border: 1px solid rgba(204, 16, 16, 0.3);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* AGENDAMENTO */
+.agendar-section {
+    background: #0d0d0d;
+    padding: 60px 32px;
+}
+
+.agendar-box {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.agendar-box h2 {
+    color: #FFD600;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.agendar-sub {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    color: #aaa;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #FFD600;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-enviar {
+    width: 100%;
+    background: #25D366;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background 0.2s;
+}
+
+.btn-enviar:hover {
+    background: #1ebe5d;
+}
+
+/* ENVIADO */
+.enviado {
+    text-align: center;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.enviado span {
+    font-size: 64px;
+}
+
+.enviado h2 {
+    color: #FFD600;
+    font-size: 24px;
+}
+
+.enviado p {
+    color: #aaa;
+}
+
+.btn-novo {
+    background: #CC1010;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+/* FOOTER */
+.footer {
+    background: #0a0a0a;
+    border-top: 2px solid #CC1010;
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer-dev {
+    color: #FFD600 !important;
+}
+
+.link-admin {
+    color: #333;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: color 0.2s;
+}
+
+.link-admin:hover {
+    color: #FFD600;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .servicos-hero h1 {
+        font-size: 32px;
+    }
+
+    .agendar-box {
+        padding: 24px;
+    }
+}
