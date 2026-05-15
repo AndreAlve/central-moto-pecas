@@ -22,7 +22,7 @@ function Home() {
                 <div className="hero-btns">
                     <a href="/servicos" className="btn-vermelho">🔧 Agendar seu Serviços</a>
                     <Link to="/catalogo" className="btn-verde">🔩 Ver Catálogo</Link>
-                    <a href="/ver-servicos" className="btn-amarelho">🏍️ Ver Serviços feito</a>
+                    <a href="/verservicos" className="btn-amarelho">🏍️ Ver Serviços feito</a>
                 </div>
             </div>
 
