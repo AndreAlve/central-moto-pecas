@@ -20,9 +20,9 @@ function Home() {
                 <p>Sua Oficina e Loja de Peças completa!</p>
 
                 <div className="hero-btns">
-                    <a href="/servicos" className="btn-vermelho">🔧 Agendar seu Serviços</a>
+                    <Link to="/servicos" className="btn-vermelho">🔧 Agendar seu Serviços</Link>
                     <Link to="/catalogo" className="btn-verde">🔩 Ver Catálogo</Link>
-                    <a href="/verservicos" className="btn-amarelho">🏍️ Ver Serviços feito</a>
+                    <Link to="/verservicos" className="btn-amarelho">🏍️ Ver Serviços feito</Link>
                 </div>
             </div>
 
